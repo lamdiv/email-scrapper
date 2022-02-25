@@ -9,7 +9,7 @@ def check_type(email):
         if "." in text[0] or len(text[0]) >= 8:
             return "Human"
         else:
-            return "Non Human"
+            return "Non-Human"
 
 
 #create output file in json format
@@ -50,4 +50,3 @@ def main():
 if __name__ == '__main__':
     main()
 
-    
