@@ -15,7 +15,7 @@ def check_type(email):
 #create output file in json format
 def create_output(data,result_file):
     with open("result.json", "w") as outfile:
-        json.dump(data, outfile)
+        json.dump(data, outfile, ensure_ascii=False, indent=4)
         print(f"Json file has been created. Check {result_file} file!")
 
 
@@ -49,4 +49,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
